@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 710,
-              "y": 50
+              "x": 564.9999999999998,
+              "y": 80.00000000000017
             },
             "size": {
-              "width": 480,
-              "height": 460
+              "width": 170,
+              "height": 310
             },
             "visible": true,
             "shape": "trust-boundary-box",
@@ -40,8 +40,8 @@
           },
           {
             "position": {
-              "x": 320,
-              "y": 10.000000000000483
+              "x": 240,
+              "y": -40
             },
             "size": {
               "width": 200,
@@ -61,8 +61,8 @@
           },
           {
             "position": {
-              "x": 740,
-              "y": 180
+              "x": 590,
+              "y": 110
             },
             "size": {
               "width": 120,
@@ -183,417 +183,6 @@
             ]
           },
           {
-            "position": {
-              "x": 1049,
-              "y": 70
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Light"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "035d2f93-a0bb-4b8f-8875-0cfd34c1f36d"
-                },
-                {
-                  "group": "right",
-                  "id": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
-                },
-                {
-                  "group": "bottom",
-                  "id": "62929ec8-1198-4bde-8d4f-bf70a18c21b2"
-                },
-                {
-                  "group": "left",
-                  "id": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
-                }
-              ]
-            },
-            "id": "cc260494-bbab-4c52-8cc1-e422268b3a68",
-            "zIndex": 2,
-            "data": {
-              "type": "tm.Process",
-              "name": "Light",
-              "description": "Can turn on or off",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1089,
-              "y": 270
-            },
-            "size": {
-              "width": 80,
-              "height": 70
-            },
-            "attrs": {
-              "text": {
-                "text": "Door Lock"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "035d2f93-a0bb-4b8f-8875-0cfd34c1f36d"
-                },
-                {
-                  "group": "right",
-                  "id": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
-                },
-                {
-                  "group": "bottom",
-                  "id": "62929ec8-1198-4bde-8d4f-bf70a18c21b2"
-                },
-                {
-                  "group": "left",
-                  "id": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
-                }
-              ]
-            },
-            "id": "917e9198-98ad-4ba7-b2d1-e8f0d0cbea28",
-            "zIndex": 3,
-            "data": {
-              "type": "tm.Process",
-              "name": "Door Lock",
-              "description": "Can lock or unlock",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 940,
-              "y": 370
-            },
-            "size": {
-              "width": 130,
-              "height": 110
-            },
-            "attrs": {
-              "text": {
-                "text": "Security Camera"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "035d2f93-a0bb-4b8f-8875-0cfd34c1f36d"
-                },
-                {
-                  "group": "right",
-                  "id": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
-                },
-                {
-                  "group": "bottom",
-                  "id": "62929ec8-1198-4bde-8d4f-bf70a18c21b2"
-                },
-                {
-                  "group": "left",
-                  "id": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
-                }
-              ]
-            },
-            "id": "4a827bb7-3149-47df-ac3e-06857d95328d",
-            "zIndex": 4,
-            "data": {
-              "type": "tm.Process",
-              "name": "Security Camera",
-              "description": "Can move and record video",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Lock State",
-              "description": "Either locked or unlocked",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Lock State"
-            ],
-            "id": "49547f70-91be-4de0-94b0-25100cae7784",
-            "source": {
-              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
-            },
-            "target": {
-              "cell": "917e9198-98ad-4ba7-b2d1-e8f0d0cbea28",
-              "port": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
-            },
-            "vertices": [
-              {
-                "x": 950,
-                "y": 235
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -639,8 +228,8 @@
             },
             "vertices": [
               {
-                "x": 620,
-                "y": 140
+                "x": 520,
+                "y": -10
               }
             ]
           },
@@ -664,7 +253,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Server Authentication + Automation Hub Control",
+              "name": "Server Authentication + \nAutomation Hub Control",
               "description": "Authenticate w. cloud server, send personal schedules, live camera feeds, light control, and secure lock/unlock commands",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -677,7 +266,7 @@
               "threats": []
             },
             "labels": [
-              "Server Authentication + Automation Hub Control"
+              "Server Authentication + \nAutomation Hub Control"
             ],
             "id": "fb2a204d-7cec-4e36-b676-7edb79b4845c",
             "source": {
@@ -690,8 +279,8 @@
             },
             "vertices": [
               {
-                "x": 160,
-                "y": 160
+                "x": 120,
+                "y": 80
               }
             ]
           },
@@ -796,57 +385,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Security Camera Control+Video",
-              "description": "Camera movement/control + video data",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Security Camera Control+Video"
-            ],
-            "id": "27a862a1-3a56-4b3a-8fe5-a27746fb8e48",
-            "source": {
-              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
-            },
-            "target": {
-              "cell": "4a827bb7-3149-47df-ac3e-06857d95328d",
-              "port": "035d2f93-a0bb-4b8f-8875-0cfd34c1f36d"
-            },
-            "vertices": [
-              {
-                "x": 950,
-                "y": 320
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -879,13 +417,13 @@
               "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
             },
             "target": {
-              "cell": "cc260494-bbab-4c52-8cc1-e422268b3a68",
-              "port": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
+              "cell": "d0ba08f7-2c9a-4046-81ab-a499ac714eee",
+              "port": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
             },
             "vertices": [
               {
-                "x": 920,
-                "y": 130
+                "x": 810,
+                "y": 21
               }
             ]
           },
@@ -930,13 +468,147 @@
               "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
             },
             "target": {
-              "cell": "50fce312-dc83-4392-aa83-b9db08654cb6",
-              "port": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
+              "cell": "235c2e4c-e498-47f1-81d1-812c0209a78e",
+              "port": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
             },
             "vertices": [
               {
-                "x": 960,
-                "y": 185
+                "x": 860,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lock State",
+              "description": "Either locked or unlocked",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Lock State"
+            ],
+            "id": "49547f70-91be-4de0-94b0-25100cae7784",
+            "source": {
+              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
+              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
+            },
+            "target": {
+              "cell": "02d363ce-698f-48cb-8a30-8a5cf1a7a8d4",
+              "port": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Security Camera Control+Video",
+              "description": "Camera movement/control + video data",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Security Camera Control+Video"
+            ],
+            "id": "27a862a1-3a56-4b3a-8fe5-a27746fb8e48",
+            "source": {
+              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
+              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
+            },
+            "target": {
+              "cell": "8e5462e1-5dbf-4bf2-a90a-24e3d017c861",
+              "port": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "IOT devices and automation hub must mutually authenticate with each other",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              ""
+            ],
+            "id": "3fff9678-22e5-4020-a685-d5020b2d0bda",
+            "source": {
+              "x": 930,
+              "y": -60
+            },
+            "target": {
+              "x": 950,
+              "y": 440
+            },
+            "vertices": [
+              {
+                "x": 990,
+                "y": 180
               }
             ]
           },
@@ -1059,8 +731,8 @@
           },
           {
             "position": {
-              "x": 370,
-              "y": 40
+              "x": 290,
+              "y": -20
             },
             "size": {
               "width": 100,
@@ -1179,8 +851,8 @@
           },
           {
             "position": {
-              "x": 360,
-              "y": 180
+              "x": 280,
+              "y": 120
             },
             "size": {
               "width": 120,
@@ -1303,8 +975,8 @@
           },
           {
             "position": {
-              "x": 740,
-              "y": 360
+              "x": 590,
+              "y": 290
             },
             "size": {
               "width": 120,
@@ -1427,16 +1099,16 @@
           },
           {
             "position": {
-              "x": 1070,
-              "y": 155
+              "x": 997,
+              "y": -9
             },
             "size": {
-              "width": 80,
-              "height": 80
+              "width": 112.5,
+              "height": 60
             },
             "attrs": {
               "text": {
-                "text": "Thermostat"
+                "text": "Light"
               },
               "body": {
                 "stroke": "#333333",
@@ -1445,7 +1117,7 @@
               }
             },
             "visible": true,
-            "shape": "process",
+            "shape": "actor",
             "ports": {
               "groups": {
                 "top": {
@@ -1512,36 +1184,384 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "035d2f93-a0bb-4b8f-8875-0cfd34c1f36d"
+                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
                 },
                 {
                   "group": "right",
-                  "id": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
+                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
                 },
                 {
                   "group": "bottom",
-                  "id": "62929ec8-1198-4bde-8d4f-bf70a18c21b2"
+                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
                 },
                 {
                   "group": "left",
-                  "id": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
+                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
                 }
               ]
             },
-            "id": "50fce312-dc83-4392-aa83-b9db08654cb6",
-            "zIndex": 15,
+            "id": "d0ba08f7-2c9a-4046-81ab-a499ac714eee",
+            "zIndex": 16,
             "data": {
-              "type": "tm.Process",
-              "name": "Thermostat",
-              "description": "Can set the A/C temperature and measure the current temperature",
-              "outOfScope": false,
+              "type": "tm.Actor",
+              "name": "Light",
+              "description": "Can turn on or off",
               "isTrustBoundary": false,
+              "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1056.5,
+              "y": 90.00000000000017
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Thermostat"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
+                },
+                {
+                  "group": "right",
+                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
+                },
+                {
+                  "group": "left",
+                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+                }
+              ]
+            },
+            "id": "235c2e4c-e498-47f1-81d1-812c0209a78e",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Thermostat",
+              "description": "Can set the A/C temperature and measure the current temperature",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1056.5,
+              "y": 230
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Door Lock"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
+                },
+                {
+                  "group": "right",
+                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
+                },
+                {
+                  "group": "left",
+                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+                }
+              ]
+            },
+            "id": "02d363ce-698f-48cb-8a30-8a5cf1a7a8d4",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Door Lock",
+              "description": "Can lock or unlock",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1035,
+              "y": 340
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Security Camera"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
+                },
+                {
+                  "group": "right",
+                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
+                },
+                {
+                  "group": "left",
+                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+                }
+              ]
+            },
+            "id": "8e5462e1-5dbf-4bf2-a90a-24e3d017c861",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Security Camera",
+              "description": "Can move and record video",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
               "threats": []
             }
           }
