@@ -1,7 +1,7 @@
 {
-  "version": "2.5.0",
+  "version": "2.2.0",
   "summary": {
-    "title": "New Threat Model",
+    "title": "Assignment 2 -  Home Automation Hub Security Analysis",
     "owner": "",
     "description": "",
     "id": 0
@@ -11,66 +11,262 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "New STRIDE diagram",
+        "title": " Home Automation Hub Security Analysis",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.5.0",
+        "version": "2.2.0",
         "cells": [
           {
             "position": {
-              "x": 574.9999999999998,
-              "y": -359.99999999999983
+              "x": 219.9999999999984,
+              "y": 50.000000000002274
             },
             "size": {
-              "width": 170,
-              "height": 310
+              "width": 910,
+              "height": 640
             },
-            "visible": true,
             "shape": "trust-boundary-box",
-            "id": "87ee173c-4bf9-4236-b433-38e80b0dd6a4",
+            "attrs": {
+              "headerText": {
+                "text": "Home Automation Hub"
+              }
+            },
+            "id": "5718f07e-2cdc-4077-9544-2f3b9665187a",
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Home Automation Hub",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 70,
+              "y": 480
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User\n(via Mobile App)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "10401c3d-64ed-4395-a889-0573c68533a1",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "User\n(via Mobile App)",
+              "description": "Initiates commands, views status, and manages schedules.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1190,
+              "y": 390
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Smart Home\nDevices"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "54c66f75-3af8-4dc9-b909-b8b24611492c",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Smart Home\nDevices",
+              "description": "Receive commands (lights, locks, etc.) and send status/sensor data (feeds, temp).\n",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -12.5,
+              "y": 150
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Cloud Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "738bffb2-6d88-4b19-9e50-295059b61ba9",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Cloud Service",
+              "description": "Central server for remote access, data storage, and third-party integration.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 650,
+              "y": 125
+            },
+            "size": {
+              "width": 160,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Receive &\nAuthenticate\nCommand"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "adf9b43b-200b-4f76-bd60-d9f1d5841736",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Receive &\nAuthenticate\nCommand",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 982.5,
+              "y": 125
+            },
+            "size": {
+              "width": 170,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Translate &\nDispatch\nCommand"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "e5f816bb-492e-4848-867a-f4a2dd983d2c",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Translate &\nDispatch\nCommand",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 700,
+              "y": 540
+            },
+            "size": {
+              "width": 150,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Handle\nDevice\nFeedback"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "03bac2a9-d125-4f4e-bdc2-f3d5e4deec4c",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Process",
+              "name": "Handle\nDevice\nFeedback",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
           },
           {
             "position": {
               "x": 250,
-              "y": -480
+              "y": 260
             },
             "size": {
-              "width": 200,
-              "height": 260
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "7472f398-72ab-43ba-978b-6fc83da7bb6b",
-            "zIndex": -1,
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 600,
-              "y": -330
-            },
-            "size": {
-              "width": 120,
+              "width": 180,
               "height": 110
             },
             "attrs": {
               "text": {
-                "text": "Automation Hub"
+                "text": "Sync & Manage\nConfiguration"
               },
               "body": {
                 "stroke": "#333333",
@@ -80,96 +276,13 @@
             },
             "visible": true,
             "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "035d2f93-a0bb-4b8f-8875-0cfd34c1f36d"
-                },
-                {
-                  "group": "right",
-                  "id": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
-                },
-                {
-                  "group": "bottom",
-                  "id": "62929ec8-1198-4bde-8d4f-bf70a18c21b2"
-                },
-                {
-                  "group": "left",
-                  "id": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
-                }
-              ]
-            },
-            "id": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-            "zIndex": 1,
+            "id": "aebdaf29-b521-4281-94ea-31905ab03012",
+            "zIndex": 7,
             "data": {
               "type": "tm.Process",
-              "name": "Automation Hub",
-              "description": "Receives commands from cloud to control IOT devices in the residence, and forward any data back to the could",
+              "name": "Sync & Manage\nConfiguration",
+              "description": "",
               "outOfScope": false,
-              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "handlesCardPayment": false,
@@ -177,204 +290,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "children": [
-              "c9f7e521-b8b8-4523-bc29-cf7e929d461f"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Automation Hub Control",
-              "description": "Cloud server authenticates with automation hub and forwards user controls from mobile app",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "HTTPS",
-              "threats": []
-            },
-            "labels": [
-              "Automation Hub Control"
-            ],
-            "id": "7e88a016-1c4a-4380-9186-a08c35ec907e",
-            "source": {
-              "cell": "1e274ad2-1ffd-4009-8398-70883466056a",
-              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
-            },
-            "target": {
-              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-              "port": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
-            },
-            "vertices": [
-              {
-                "x": 530,
-                "y": -450
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Server Authentication + \nAutomation Hub Control",
-              "description": "Authenticate w. cloud server, send personal schedules, live camera feeds, light control, and secure lock/unlock commands",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "HTTPS",
-              "threats": []
-            },
-            "labels": [
-              "Server Authentication + \nAutomation Hub Control"
-            ],
-            "id": "fb2a204d-7cec-4e36-b676-7edb79b4845c",
-            "source": {
-              "cell": "ebcce372-4944-4fe8-83fa-0b5c9afebfa7",
-              "port": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
-            },
-            "target": {
-              "cell": "1e274ad2-1ffd-4009-8398-70883466056a",
-              "port": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
-            },
-            "vertices": [
-              {
-                "x": 130,
-                "y": -360
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "ba0eef12-3966-438a-afff-20913d82015c",
-            "source": {
-              "cell": "1e274ad2-1ffd-4009-8398-70883466056a",
-              "port": "62929ec8-1198-4bde-8d4f-bf70a18c21b2"
-            },
-            "target": {
-              "cell": "db3cc717-de51-40fa-bbdd-fbc534e209b0",
-              "port": "77a1ed58-0d62-481f-81ec-191dce9303b8"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "996a2552-f114-4a88-be43-386f93281c88",
-            "source": {
-              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-              "port": "62929ec8-1198-4bde-8d4f-bf70a18c21b2"
-            },
-            "target": {
-              "cell": "bb2c3ca5-eae2-488d-94b6-7a16611338c3",
-              "port": "77a1ed58-0d62-481f-81ec-191dce9303b8"
-            },
-            "vertices": []
+            }
           },
           {
             "shape": "flow",
@@ -396,35 +312,26 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Light State",
-              "description": "Either on or off",
+              "name": "1. Remote or Local\n Control Commands (encrypted)\n",
+              "description": "",
               "outOfScope": false,
-              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": true,
+              "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
-            "labels": [
-              "Light State"
-            ],
-            "id": "df421f76-2428-4c35-b86a-867016b03ffa",
+            "id": "d4593ea2-b77c-4c96-ab9c-fa1749e1c114",
             "source": {
-              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
+              "cell": "738bffb2-6d88-4b19-9e50-295059b61ba9"
             },
             "target": {
-              "cell": "d0ba08f7-2c9a-4046-81ab-a499ac714eee",
-              "port": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+              "cell": "adf9b43b-200b-4f76-bd60-d9f1d5841736"
             },
-            "vertices": [
-              {
-                "x": 820,
-                "y": -419
-              }
+            "labels": [
+              "1. Remote or Local\n Control Commands (encrypted)\n"
             ]
           },
           {
@@ -436,7 +343,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
+                  "name": ""
                 },
                 "strokeDasharray": null
               }
@@ -447,34 +354,31 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Temperature Data",
-              "description": "Set temperature + measured temperature",
+              "name": "1.1. Authenticated Control Command",
+              "description": "",
               "outOfScope": false,
-              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
-            "labels": [
-              "Temperature Data"
-            ],
-            "id": "1682f21a-f648-46f4-8280-7763a37a1359",
+            "id": "c4e0fdf7-2b00-4aa5-bdba-3df9126e6501",
             "source": {
-              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
+              "cell": "adf9b43b-200b-4f76-bd60-d9f1d5841736"
             },
             "target": {
-              "cell": "235c2e4c-e498-47f1-81d1-812c0209a78e",
-              "port": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+              "cell": "e5f816bb-492e-4848-867a-f4a2dd983d2c"
             },
+            "labels": [
+              "1.1. Authenticated Control Command"
+            ],
             "vertices": [
               {
-                "x": 870,
-                "y": -320
+                "x": 900,
+                "y": 140
               }
             ]
           },
@@ -498,10 +402,9 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Lock State",
-              "description": "Either locked or unlocked",
+              "name": "1.2. Device-Specific Instructions \n(On/Off, Lock/Unlock)",
+              "description": "",
               "outOfScope": false,
-              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -510,22 +413,24 @@
               "protocol": "",
               "threats": []
             },
-            "labels": [
-              "Lock State"
-            ],
-            "id": "49547f70-91be-4de0-94b0-25100cae7784",
+            "id": "22f144f8-a8dc-4251-a24c-33019d10cb9d",
             "source": {
-              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
+              "cell": "e5f816bb-492e-4848-867a-f4a2dd983d2c"
             },
             "target": {
-              "cell": "02d363ce-698f-48cb-8a30-8a5cf1a7a8d4",
-              "port": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+              "cell": "54c66f75-3af8-4dc9-b909-b8b24611492c"
             },
+            "labels": [
+              "1.2. Device-Specific Instructions \n(On/Off, Lock/Unlock)"
+            ],
             "vertices": [
               {
-                "x": 890,
-                "y": -240
+                "x": 1010,
+                "y": 250
+              },
+              {
+                "x": 1060,
+                "y": 330
               }
             ]
           },
@@ -538,7 +443,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
+                  "name": ""
                 },
                 "strokeDasharray": null
               }
@@ -549,1019 +454,500 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Security Camera Control+Video",
-              "description": "Camera movement/control + video data",
+              "name": "1.3. Device Status / Sensor Data \n(e.g., Live Feed, Lock Status)",
+              "description": "",
               "outOfScope": false,
-              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
-            "labels": [
-              "Security Camera Control+Video"
-            ],
-            "id": "27a862a1-3a56-4b3a-8fe5-a27746fb8e48",
+            "id": "111f7475-d8cd-49c0-96c0-ea59d9a6ead0",
             "source": {
-              "cell": "b642cccd-804b-45b3-b7c2-16c9e9a9c86d",
-              "port": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
+              "cell": "54c66f75-3af8-4dc9-b909-b8b24611492c"
             },
             "target": {
-              "cell": "8e5462e1-5dbf-4bf2-a90a-24e3d017c861",
-              "port": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
+              "cell": "03bac2a9-d125-4f4e-bdc2-f3d5e4deec4c"
             },
-            "vertices": [
-              {
-                "x": 950,
-                "y": -100
-              }
+            "labels": [
+              "1.3. Device Status / Sensor Data \n(e.g., Live Feed, Lock Status)"
             ]
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "IOT devices and automation hub must mutually authenticate with each other",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "type": "tm.Flow",
+              "name": "1.4. Real-time Status and Feeds (for display in app/cloud)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
             },
-            "labels": [
-              ""
-            ],
-            "id": "3fff9678-22e5-4020-a685-d5020b2d0bda",
+            "id": "cad3a87a-ad98-4135-ba0a-4dbcc61ed0ce",
             "source": {
-              "x": 940,
-              "y": -500
+              "cell": "03bac2a9-d125-4f4e-bdc2-f3d5e4deec4c"
             },
             "target": {
-              "x": 960,
-              "y": 0
+              "cell": "738bffb2-6d88-4b19-9e50-295059b61ba9"
             },
             "vertices": [
               {
-                "x": 1000,
-                "y": -260
+                "x": 160,
+                "y": 630
+              },
+              {
+                "x": 10,
+                "y": 540
               }
+            ],
+            "labels": [
+              "1.4. Real-time Status and Feeds (for display in app/cloud)"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1. Remote or Local Control\nCommands (encrypted)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "bf7ecf40-d056-48ac-8bea-55aa07ae5f9c",
+            "source": {
+              "cell": "10401c3d-64ed-4395-a889-0573c68533a1"
+            },
+            "target": {
+              "cell": "adf9b43b-200b-4f76-bd60-d9f1d5841736"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 450
+              },
+              {
+                "x": 738,
+                "y": 430
+              }
+            ],
+            "labels": [
+              "1. Remote or Local Control\nCommands (encrypted)"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.4. Real-time Status and Feeds\n(for display in app/cloud)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "83630889-3c92-4c02-98f7-ef1433cfefd8",
+            "source": {
+              "cell": "03bac2a9-d125-4f4e-bdc2-f3d5e4deec4c"
+            },
+            "target": {
+              "cell": "10401c3d-64ed-4395-a889-0573c68533a1"
+            },
+            "labels": [
+              "1.4. Real-time Status and Feeds\n(for display in app/cloud)"
+            ],
+            "vertices": [
+              {
+                "x": 540,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2. Schedule Updates, \nConfiguration Changes",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "66a77010-6b84-4152-b7aa-345d2fa316b5",
+            "source": {
+              "cell": "738bffb2-6d88-4b19-9e50-295059b61ba9"
+            },
+            "target": {
+              "cell": "aebdaf29-b521-4281-94ea-31905ab03012"
+            },
+            "labels": [
+              "2. Schedule Updates, \nConfiguration Changes"
+            ],
+            "vertices": [
+              {
+                "x": 290,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2. Schedule Updates, \nConfiguration Changes",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "4be02f52-fcf7-48c0-a2c1-d134f292545e",
+            "source": {
+              "cell": "10401c3d-64ed-4395-a889-0573c68533a1"
+            },
+            "target": {
+              "cell": "aebdaf29-b521-4281-94ea-31905ab03012"
+            },
+            "labels": [
+              "2. Schedule Updates, \nConfiguration Changes"
+            ],
+            "vertices": [
+              {
+                "x": 256.25,
+                "y": 410
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2.1 Write/Update \nUser Configuration \n& Schedules",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "49d9d0ce-9ea2-434d-a6a9-f41b4e5d5a09",
+            "source": {
+              "cell": "aebdaf29-b521-4281-94ea-31905ab03012"
+            },
+            "target": {
+              "cell": "f189f4cf-14cd-4389-a49a-e827bd6df209"
+            },
+            "labels": [
+              "2.1 Write/Update \nUser Configuration \n& Schedules"
+            ],
+            "vertices": [
+              {
+                "x": 510,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2.2 Read Device Mapping \n/ Current Configuration",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "73bb4cec-824a-4990-b776-3da02da55184",
+            "source": {
+              "cell": "e5f816bb-492e-4848-867a-f4a2dd983d2c"
+            },
+            "target": {
+              "cell": "f189f4cf-14cd-4389-a49a-e827bd6df209"
+            },
+            "labels": [
+              "2.2 Read Device Mapping \n/ Current Configuration"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2.2. Read Device Mapping \n/ Current Configuration",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "81e9421b-5e69-4028-9c85-30090aa6a941",
+            "source": {
+              "cell": "aebdaf29-b521-4281-94ea-31905ab03012"
+            },
+            "target": {
+              "cell": "f189f4cf-14cd-4389-a49a-e827bd6df209"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 350
+              }
+            ],
+            "labels": [
+              "2.2. Read Device Mapping \n/ Current Configuration"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2.3. Configuration Sync \n(HTTPS encrypted)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "9e157656-6968-4ffe-956b-13a2620fe8c1",
+            "source": {
+              "cell": "aebdaf29-b521-4281-94ea-31905ab03012"
+            },
+            "target": {
+              "cell": "738bffb2-6d88-4b19-9e50-295059b61ba9"
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": 320.5
+              }
+            ],
+            "labels": [
+              "2.3. Configuration Sync \n(HTTPS encrypted)"
             ]
           },
           {
             "position": {
-              "x": 50,
-              "y": -100
+              "x": 610,
+              "y": 310
             },
             "size": {
-              "width": 150,
+              "width": 120,
               "height": 60
             },
             "attrs": {
               "text": {
-                "text": "User (Mobile App)"
+                "text": "Local\nConfiguration"
               },
-              "body": {
-                "stroke": "#333333",
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
-                },
-                {
-                  "group": "right",
-                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
-                },
-                {
-                  "group": "bottom",
-                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
-                },
-                {
-                  "group": "left",
-                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
-                }
-              ]
-            },
-            "id": "ebcce372-4944-4fe8-83fa-0b5c9afebfa7",
+            "shape": "store",
+            "id": "f189f4cf-14cd-4389-a49a-e827bd6df209",
             "zIndex": 11,
             "data": {
-              "type": "tm.Actor",
-              "name": "User (Mobile App)",
-              "description": "After authenticating with the cloud server, mobile app allows user to see data from and change states of IOT devices",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": true,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 300,
-              "y": -460
-            },
-            "size": {
-              "width": 100,
-              "height": 90
-            },
-            "attrs": {
-              "text": {
-                "text": "Cloud Server"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "035d2f93-a0bb-4b8f-8875-0cfd34c1f36d"
-                },
-                {
-                  "group": "right",
-                  "id": "592a8b67-d3cc-4eb9-8b96-0c62bfaeec86"
-                },
-                {
-                  "group": "bottom",
-                  "id": "62929ec8-1198-4bde-8d4f-bf70a18c21b2"
-                },
-                {
-                  "group": "left",
-                  "id": "50b75e04-2220-4eb6-9a6a-4b65a83efd88"
-                }
-              ]
-            },
-            "id": "1e274ad2-1ffd-4009-8398-70883466056a",
-            "zIndex": 12,
-            "data": {
-              "type": "tm.Process",
-              "name": "Cloud Server",
-              "description": "Authenticates user, authenticates self with automation hubs, and forwards commands/data between the two",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 290,
-              "y": -320
-            },
-            "size": {
-              "width": 120,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "User Data"
-              },
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "77a1ed58-0d62-481f-81ec-191dce9303b8"
-                },
-                {
-                  "group": "right",
-                  "id": "3d10dbda-0611-4412-a3a9-45846cfe099a"
-                },
-                {
-                  "group": "bottom",
-                  "id": "aea96bad-2c8d-4a0b-b5ce-452003f07a4b"
-                },
-                {
-                  "group": "left",
-                  "id": "11100980-48e3-48aa-bff7-2c2e1da69f69"
-                }
-              ]
-            },
-            "id": "db3cc717-de51-40fa-bbdd-fbc534e209b0",
-            "zIndex": 13,
-            "data": {
               "type": "tm.Store",
-              "name": "User Data",
-              "description": "Stores usernames and passwords for users on the mobile app",
+              "name": "Local\nConfiguration",
+              "description": "",
               "outOfScope": false,
-              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
-              "storesCredentials": true,
+              "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 600,
-              "y": -150
-            },
-            "size": {
-              "width": 120,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Configuration"
-              },
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "77a1ed58-0d62-481f-81ec-191dce9303b8"
-                },
-                {
-                  "group": "right",
-                  "id": "3d10dbda-0611-4412-a3a9-45846cfe099a"
-                },
-                {
-                  "group": "bottom",
-                  "id": "aea96bad-2c8d-4a0b-b5ce-452003f07a4b"
-                },
-                {
-                  "group": "left",
-                  "id": "11100980-48e3-48aa-bff7-2c2e1da69f69"
-                }
-              ]
-            },
-            "id": "bb2c3ca5-eae2-488d-94b6-7a16611338c3",
-            "zIndex": 14,
-            "data": {
-              "type": "tm.Store",
-              "name": "Configuration",
-              "description": "Store schedules for the user, such as when to automatically turn on/off lights or perform other tasks",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": true,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1007,
-              "y": -449
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Light"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
-                },
-                {
-                  "group": "right",
-                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
-                },
-                {
-                  "group": "bottom",
-                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
-                },
-                {
-                  "group": "left",
-                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
-                }
-              ]
-            },
-            "id": "d0ba08f7-2c9a-4046-81ab-a499ac714eee",
-            "zIndex": 16,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Light",
-              "description": "Can turn on or off",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1066.5,
-              "y": -349.99999999999983
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Thermostat"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
-                },
-                {
-                  "group": "right",
-                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
-                },
-                {
-                  "group": "bottom",
-                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
-                },
-                {
-                  "group": "left",
-                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
-                }
-              ]
-            },
-            "id": "235c2e4c-e498-47f1-81d1-812c0209a78e",
-            "zIndex": 17,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Thermostat",
-              "description": "Can set the A/C temperature and measure the current temperature",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1066.5,
-              "y": -210
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Door Lock"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
-                },
-                {
-                  "group": "right",
-                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
-                },
-                {
-                  "group": "bottom",
-                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
-                },
-                {
-                  "group": "left",
-                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
-                }
-              ]
-            },
-            "id": "02d363ce-698f-48cb-8a30-8a5cf1a7a8d4",
-            "zIndex": 18,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Door Lock",
-              "description": "Can lock or unlock",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1045,
-              "y": -100
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Security Camera"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "cf3eb92d-3215-4343-8ad6-887c364f0e71"
-                },
-                {
-                  "group": "right",
-                  "id": "dbb28d42-aba1-4a25-a00c-ee788206dc28"
-                },
-                {
-                  "group": "bottom",
-                  "id": "d56862d0-40ac-47e3-b8b5-5302f56239e2"
-                },
-                {
-                  "group": "left",
-                  "id": "32ca7ebe-3ddb-4773-ad33-bb8b6fd89f40"
-                }
-              ]
-            },
-            "id": "8e5462e1-5dbf-4bf2-a90a-24e3d017c861",
-            "zIndex": 19,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Security Camera",
-              "description": "Can move and record video",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
               "threats": []
             }
           }
@@ -1570,6 +956,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 0
   }
 }
